@@ -1,11 +1,16 @@
-# AISVE - AI & Sustainability VET Education Projects
+# AISVE - AI & Sustainability in VET Education
 
 ## Overview
 
-AISVE (AI & Sustainability VET Education) is a comprehensive collection of technological projects developed to promote environmental sustainability through accessible technologies. This repository contains a series of projects ranging from basic sensor implementations to advanced AI-powered solutions, all designed to raise awareness about environmental issues and provide practical solutions for environmental monitoring and automation.
+AISVE (AI & Sustainability in VET Education) is part of a comprehensive 35-month European project (September 2023 - July 2026) that addresses the urgent need to integrate AI education in Vocational Education and Training (VET). This repository contains a collection of technological projects developed to bridge the skills gap and prepare the workforce for AI-driven changes while promoting sustainable solutions.
+
+The project is driven by the recognition that AI is a transformative force in modern society, yet many students finishing compulsory education lack understanding of its workings, potential opportunities, and necessary precautions. In a digitally advancing Europe, integrating AI education is both urgent and essential.
+
+This collection of projects ranges from basic sensor implementations to advanced AI-powered solutions, all designed to raise awareness about environmental issues and provide practical solutions for environmental monitoring and automation through hands-on learning experiences.
 
 **Project Author:** Lucas Molino Piñar  
-**Organization:** EVTA (European Vocational Training Association)
+**Organization:** EVTA (European Vocational Training Association)  
+**Project Duration:** 35 months (01/09/2023 - 31/07/2026)
 
 ## Project Structure
 
@@ -57,6 +62,35 @@ Each project directory contains:
 - `README.md` - Project-specific documentation
 - `requirements.txt` - Python dependencies
 - `model/` - AI models and training notebooks (for advanced projects)
+
+## Project Context and Objectives
+
+### Main Objectives
+- **Raise awareness** of sustainability and develop innovative approaches to teaching and learning
+- **Develop skills and confidence** of teachers in the development and use of AI solutions
+- **Encourage teachers** to design and share innovative and effective practices for sustainability through AI-based technologies
+- **Create a network** of #AI-SAVES VET Clubs where students and teachers can produce collaborative solutions to address sustainability issues
+- **Reinforce links** between schools, NGOs, companies, teacher training centers, professional associations, and universities
+
+### Project Components
+This repository contributes to the broader AISVE ecosystem which includes:
+- **AI KIT:** Microprocessors, cameras, sensors, and actuators for hands-on learning
+- **MooC:** Online course "AI-SAVES: Artificial Intelligence and Sustainable Automated Vision for Environmental Solutions"
+- **AI-SAVES@ProjectHub:** Resource hub for sharing pedagogical projects within the VET community
+- **#AI-SAVES VET Clubs:** School-based clubs for knowledge dissemination and ongoing development
+
+### Target Groups
+**Direct:**
+- VET teachers and trainers from partnership organizations
+- VET teachers and trainers from across Europe
+- VET students
+
+**Indirect:**
+- VET Schools
+- Companies
+- NGOs and civil society organizations
+- Environmental associations
+- Other relevant stakeholders
 
 ## Projects by Difficulty Level
 
@@ -201,7 +235,7 @@ Comprehensive waste management solution combining multiple technologies.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AISVE.git
+   git clone https://github.com/EVTA-EU/AISVE.git
    cd AISVE
    ```
 
@@ -255,6 +289,15 @@ Advanced projects suitable for:
 - Advanced educational programs
 - Environmental monitoring systems
 
+## Contributing
+
+We welcome contributions to improve and expand the AISVE project collection. Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your improvements
+4. Submit a pull request
+
 ## Educational Impact
 
 These projects serve multiple educational purposes:
@@ -263,13 +306,23 @@ These projects serve multiple educational purposes:
 - **AI Literacy:** Introduction to machine learning concepts
 - **Problem-Solving:** Real-world environmental challenges
 
-## Future Development
+## Support and Documentation
 
-The project is designed for continuous expansion with:
-- Additional sensor integrations
-- Enhanced AI models
-- IoT connectivity features
-- Mobile application interfaces
-- Cloud-based data analytics
+For detailed information about each project:
+- Check individual project README.md files in each project directory
+- Review training notebooks in `model/` folders for AI projects
+- Refer to requirements.txt for specific dependencies
 
+## Acknowledgments
 
+This project is developed by Lucas Molino Piñar as part of the AISVE (AI & Sustainability in VET Education) initiative under the EVTA (European Vocational Training Association). The project contributes to a broader European effort to integrate AI education in vocational training and promote sustainable technology solutions for environmental challenges.
+
+**EVTA's Role in AISVE:**
+- Contributing 8 projects to the Project Hub
+- Leading the European Online contest
+- Hosting the final conference
+- Organizing 2 National replication workshops
+
+This work supports the mission to equip VET teachers and students with the skills to engage in AI and sustainability projects, creating a network of collaborative solutions for environmental challenges.
+
+---
