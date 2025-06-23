@@ -46,8 +46,8 @@ LDR sensors are connected directly to GPIO pins:
 
 1. **Clone or download the project files**
    ```bash
-   git clone <repository-url>
-   cd light-tracking-servo
+   git clone https://github.com/EVTA-EU/AISVE.git
+   cd AISVE/PR1A
    ```
 
 2. **Install required Python packages**

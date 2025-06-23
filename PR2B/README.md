@@ -60,8 +60,8 @@ A Raspberry Pi-based motion detection system that automatically controls LED str
 
 2. **Clone or download the project files**
    ```bash
-   git clone <repository-url>
-   cd motion-detection-system
+   git clone https://github.com/EVTA-EU/AISVE.git
+   cd AISVE/PR2B
    ```
 
 3. **Install required Python packages**

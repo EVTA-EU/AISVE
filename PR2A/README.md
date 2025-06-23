@@ -63,8 +63,8 @@ A Raspberry Pi-based environmental monitoring system that displays real-time tem
 
 2. **Clone or download the project files**
    ```bash
-   git clone <repository-url>
-   cd environmental-monitoring-station
+   git clone https://github.com/EVTA-EU/AISVE.git
+   cd AISVE/PR2A
    ```
 
 3. **Install required Python packages**

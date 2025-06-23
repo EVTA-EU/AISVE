@@ -38,24 +38,24 @@ try:
     
     # Initialize variables for temperature monitoring
     temps = []                      # List to store last 5 temperature readings
-    alertas_consecutivos = 0        # Counter for consecutive temperature rise alerts
+    consecutive_alerts = 0          # Counter for consecutive temperature rise alerts
     
     # Main monitoring loop
     while True:
         try:
             # Read temperature and humidity from DHT11 sensor
-            temperatura = dht.temperature
-            humedad = dht.humidity
-            print(f"Temperatura: {temperatura}°C")
-            print(f"Humedad: {humedad}%")
+            temperature = dht.temperature
+            humidity = dht.humidity
+            print(f"Temperature: {temperature}°C")
+            print(f"Humidity: {humidity}%")
         except RuntimeError as e:
             # Handle sensor reading errors (common with DHT sensors)
-            print("Error leyendo del sensor:", e.args[0])
-            temperatura = None
+            print("Error reading from sensor:", e.args[0])
+            temperature = None
         
-        if temperatura is not None:
+        if temperature is not None:
             # Add current temperature to the list
-            temps.append(temperatura)
+            temps.append(temperature)
             
             # Keep only the last 5 measurements (25 seconds of data at 5s intervals)
             if len(temps) > 5:
@@ -67,21 +67,21 @@ try:
                 delta = temps[-1] - temps[0]  # Current temp - temp from 20s ago
                 
                 if delta > 1:  # Temperature rose more than 1°C in 20 seconds
-                    alertas_consecutivos += 1
+                    consecutive_alerts += 1
                     
                     # Turn on ALERT LED and turn off NORMAL LED
                     led_on(LED_ALERT)
                     led_off(LED_NORMAL)
                     
                     # If 2 consecutive alerts, turn on WARNING LED and turn off ALERT LED
-                    if alertas_consecutivos >= 2:
+                    if consecutive_alerts >= 2:
                         led_on(LED_WARNING)   # Critical warning - consecutive temperature rises
                         led_off(LED_ALERT)    # Turn off yellow LED when red is active
                     else:
                         led_off(LED_WARNING)
                         
                 else:  # Temperature stable or decreasing
-                    alertas_consecutivos = 0  # Reset consecutive alert counter
+                    consecutive_alerts = 0  # Reset consecutive alert counter
                     
                     # Normal operation: only NORMAL LED on
                     led_on(LED_NORMAL)
@@ -105,7 +105,7 @@ try:
         
 except KeyboardInterrupt:
     # Handle Ctrl+C gracefully
-    print("Saliendo y apagando LEDs...")
+    print("Exiting and turning off LEDs...")
     
 finally:
     # Cleanup: turn off all LEDs and close GPIO

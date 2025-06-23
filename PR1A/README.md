@@ -42,8 +42,8 @@ A Raspberry Pi-based temperature monitoring system that uses a DHT11 sensor and 
 
 1. **Clone or download the project files**
    ```bash
-   git clone <repository-url>
-   cd temperature-monitoring-system
+   git clone https://github.com/EVTA-EU/AISVE.git
+   cd AISVE/PR1A
    ```
 
 2. **Install required Python packages**
