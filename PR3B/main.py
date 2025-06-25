@@ -23,7 +23,7 @@ conf_threshold = 0.01  # Confidence threshold
 colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 255, 0), (255, 0, 255), 
           (0, 255, 255), (128, 0, 128), (255, 165, 0), (255, 192, 203), (165, 42, 42)]
 
-print("Starting real-time detection. Press 'q' to exit...")
+print("Starting real-time detection...")
 
 try:
     while True:
@@ -61,7 +61,7 @@ try:
                         # Get color for this class
                         color = np.array(colors[int(cls_idx) % len(colors)])
                         
-                        # Create colored mask overlay (exact method from your function)
+                        # Create colored mask overlay
                         mask_indices = mask_resized > 0.5
                         overlay[mask_indices] = overlay[mask_indices] * 0.6 + color * 0.4
                         
@@ -107,9 +107,6 @@ try:
         # Display frame with overlays
         cv2.imshow("YOLO Segmentation", overlay)
         
-        # Exit if 'q' is pressed
-        if cv2.waitKey(1) == ord("q"):
-            break
 
 except KeyboardInterrupt:
     print("\nInterrupted by user")
